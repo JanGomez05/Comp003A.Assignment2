@@ -42,17 +42,20 @@ class Program
         // math operations now
         Console.WriteLine("Math Section");
 
-       
 
-       // declaring these as the integers
-        int integer1 = 3;
-        int integer2 = 6; 
 
-        Console.ReadLine();
-        Console.WriteLine($"My first integer is {integer1}");
-        Console.WriteLine($"My second integer is {integer2}");
-        // this allows the reader to know what values i decided to put in.
-        Console.ReadLine();
+        // changed the coding so the user now has authority to pick any integer
+        // convertede string to int allowing any number to follow the math operations.
+        Console.WriteLine("Please enter a number!");
+        string integerText = Console.ReadLine();
+        int integer1 = Convert.ToInt32(integerText);
+        Console.WriteLine(integer1);
+
+        Console.WriteLine("Now please choose a second number!");
+        string integerText2 = Console.ReadLine();
+        int integer2 = Convert.ToInt32(integerText2);
+        Console.WriteLine(integer2);
+
         // this is the formular for the operations
         Console.WriteLine($"{integer1} + {integer2} = {integer1 + integer2}");
         Console.WriteLine($"{integer1} - {integer2} = {integer1 - integer2}");
